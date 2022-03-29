@@ -27,8 +27,24 @@ package com.archiewhite;
     +------------------------------------------------------------------------------------------------+
  */
 
-public class View {
-    public View(String title) {
+import javax.swing.*;
 
+public class View {
+
+    private JFrame frame;
+
+    public View(String title) {
+        frame = new JFrame(title);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,500);
+        frame.setVisible(true);
+    }
+
+    public JFrame getFrame() {
+        return frame;
+    }
+
+    public void setFrame(JFrame frame) {
+        this.frame = frame;
     }
 }
