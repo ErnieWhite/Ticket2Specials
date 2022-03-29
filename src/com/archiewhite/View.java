@@ -28,4 +28,7 @@ package com.archiewhite;
  */
 
 public class View {
+    public View(String title) {
+
+    }
 }
